@@ -17,6 +17,20 @@ A Chrome extension that rephrases selected text in any input field using AI. Cho
 
 You need an API key from at least one provider; get keys from [OpenAI](https://platform.openai.com), [Anthropic](https://console.anthropic.com), or [Google AI Studio](https://aistudio.google.com).
 
+## Screenshots
+
+**Settings** — Choose your AI provider and add your API key (click the extension icon).
+
+![Settings](assets/main_ui.png.png)
+
+**Select text** — Highlight text in any input; the Rephrase button appears above the selection.
+
+![Select text and Rephrase button](assets/rephrase_button.png)
+
+**Pick a tone** — Click Rephrase to open the menu, then choose Professional, Casual, Friendly, Formal, Persuasive, or Concise.
+
+![Tone selection menu](assets/rephrase_options.png)
+
 ## Install in Chrome (Developer Mode)
 
 1. **Open the Extensions page**
