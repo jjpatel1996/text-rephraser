@@ -21,7 +21,7 @@ You need an API key from at least one provider; get keys from [OpenAI](https://p
 
 **Settings** — Choose your AI provider and add your API key (click the extension icon).
 
-![Settings](assets/main_ui.png.png)
+![Settings](assets/main_ui.png)
 
 **Select text** — Highlight text in any input; the Rephrase button appears above the selection.
 
