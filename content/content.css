@@ -1,0 +1,5 @@
+/* Minimal host styles - actual toolbar styles live inside Shadow DOM */
+#rephrase-toolbar-host {
+  position: absolute;
+  z-index: 2147483647;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Rephraser Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Rephraser</h1>
+    <p class="subtitle">Choose your AI provider and enter your API key</p>
+
+    <!-- Provider Selector -->
+    <div class="form-group">
+      <label>AI Provider</label>
+      <div class="provider-tabs">
+        <button class="provider-tab active" data-provider="openai">
+          <span class="provider-icon">&#9679;</span> OpenAI
+        </button>
+        <button class="provider-tab" data-provider="claude">
+          <span class="provider-icon">&#9679;</span> Claude
+        </button>
+        <button class="provider-tab" data-provider="gemini">
+          <span class="provider-icon">&#9679;</span> Gemini
+        </button>
+      </div>
+    </div>
+
+    <!-- API Key Input -->
+    <div class="form-group">
+      <label for="api-key" id="key-label">OpenAI API Key</label>
+      <div class="input-wrapper">
+        <input type="password" id="api-key" placeholder="sk-..." autocomplete="off">
+        <button id="toggle-visibility" class="icon-btn" title="Show/Hide key">
+          <span id="eye-icon">&#128065;</span>
+        </button>
+      </div>
+      <p class="key-hint" id="key-hint">Get your key from platform.openai.com</p>
+    </div>
+
+    <div class="btn-row">
+      <button id="save-btn" class="btn-primary">Save Settings</button>
+      <button id="remove-btn" class="btn-danger hidden" title="Remove key for this provider">Remove Key</button>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <!-- Provider Status Badges -->
+    <div class="provider-status" id="provider-status"></div>
+
+    <div class="info">
+      <p>Select text in any input field and click the rephrase icon to rewrite it in different tones.</p>
+      <p class="tones">Tones: Professional, Casual, Friendly, Formal, Persuasive, Concise</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
